@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>canvas</title>
+  <style>
+    #myCanvas{
+      width: 400px;
+      height: 150px;
+      border:1px solid blue;
+    }
+  </style>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+</body>
+</html>
+<script>
+  isCanvasSupported = (): boolean => {
+    let elem = document.createElement('canvas');
+    return !!(elem.getContext && elem.getContext('2d'));
+  }
+
+
+
+</script>

@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <img v-bind:title="message" src="./assets/logo.png">
+    {{ message }}
+    <!--<router-view/>-->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data(){
+    return {
+      message:'hello my vue'
+    }
+  }
 }
 </script>
 
